@@ -1,0 +1,64 @@
+<div mat-dialog-title>
+    <h1>Task Form</h1>
+</div>
+
+<form [formGroup]="taskForm" (ngSubmit)="onFormSubmit()">    
+
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Task name</mat-label>
+                <input matInput type="text" placeholder="Ex. Do dishes" formControlName="taskName">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Status</mat-label>
+                <mat-select formControlName="statusName">
+                    <mat-option *ngFor="let stat of status" [value]="stat">
+                    {{stat}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <!-- <mat-form-field appearance="outline">
+                <mat-label>Date created</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="dateCreate">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field> -->
+
+            <!-- <mat-form-field appearance="outline">
+                <mat-label>Date finished</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="dateFinish">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field> -->
+            <mat-form-field appearance="outline">
+                <mat-label>Enter a date range</mat-label>
+                <mat-date-range-input [formGroup]="taskForm" [rangePicker]="picker">
+                  <input matStartDate formControlName="dateCreate" placeholder="Start date">
+                  <input matEndDate formControlName="dateFinish" placeholder="End date">
+                </mat-date-range-input>
+                <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-date-range-picker #picker></mat-date-range-picker>
+              
+                <!-- <mat-error *ngIf="taskForm.controls.dateCreate.hasError('matStartDateInvalid')">Invalid start date</mat-error>
+                <mat-error *ngIf="taskForm.controls.dateFinish.hasError('matEndDateInvalid')">Invalid end date</mat-error> -->
+            </mat-form-field>
+              
+              <!-- <p>Selected range: {{taskForm.value | json}}</p> -->
+              
+        </div>
+
+    </div>
+
+
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Update': 'Save'}}</button>
+    </div>
+</form>

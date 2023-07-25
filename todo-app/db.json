@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "tasks": [
+    {
+      "taskName": "efs",
+      "dateCreate": "2023-07-26T18:00:00.000Z",
+      "dateFinish": "2023-07-30T18:00:00.000Z",
+      "statusName": "Pending",
+      "id": 2
+    }
+  ]
+}
