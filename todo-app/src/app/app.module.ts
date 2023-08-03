@@ -22,11 +22,17 @@ import {MatTableModule} from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmpAddEditComponent
+    EmpAddEditComponent,
+    LoginComponent,
+    SignupComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

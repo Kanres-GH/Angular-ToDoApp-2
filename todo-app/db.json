@@ -1,28 +1,26 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
   "profile": {
     "name": "typicode"
   },
-  "tasks": [
+  "signupUsers": [
     {
-      "taskName": "efs",
-      "dateCreate": "2023-07-26T18:00:00.000Z",
-      "dateFinish": "2023-07-30T18:00:00.000Z",
-      "statusName": "Pending",
+      "fullName": "Temirlan Gaisin",
+      "email": "ktnrgs1817@gmail.com",
+      "password": "Pass123",
+      "id": 1
+    },
+    {
+      "fullName": "Kanres",
+      "email": "wow@gmail.com",
+      "password": "Kan123",
       "id": 2
+    },
+    {
+      "fullName": "Kanres",
+      "email": "cool@gmail.com",
+      "password": "12345",
+      "id": 3
     }
-  ]
+  ],
+  "tasks": []
 }
