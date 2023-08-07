@@ -20,7 +20,40 @@
       "email": "cool@gmail.com",
       "password": "12345",
       "id": 3
+    },
+    {
+      "fullName": "Toby Fox",
+      "email": "toby@gmail.com",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "fullName": "87erew",
+      "email": "ktnrg",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "fullName": "MARZHAN KISTAUBAYEVA",
+      "email": "",
+      "password": "Pass123",
+      "id": 6
+    },
+    {
+      "firstName": "ABC",
+      "lastName": "XYZ",
+      "email": "abcxyz@gmail.com",
+      "password": "abcxyz",
+      "id": 7
     }
   ],
-  "tasks": []
+  "tasks": [
+    {
+      "taskName": "3rrferf",
+      "dateCreate": "2023-08-09T18:00:00.000Z",
+      "dateFinish": "2023-08-23T18:00:00.000Z",
+      "statusName": "Testing",
+      "id": 1
+    }
+  ]
 }
